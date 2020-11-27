@@ -1,0 +1,9 @@
+@import 'config';
+.box section {
+    background-color: $circle-color;
+    border-radius: 50%;
+}
+
+.box--shadow {
+    background-color: $secondary-color;
+}

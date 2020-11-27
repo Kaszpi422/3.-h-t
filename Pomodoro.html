@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="3.hét/css/Pomodoro.css">
+</head>
+
+<body>
+    <header>
+        Pomodoro Timer
+    </header>
+    <main class="container">
+        <div class="circle" onload="template">
+            <span id="status">Pomodoro1</span>
+            <div class="circle__timerstyle">
+                <span id="minutes"></span>
+            </div>
+            <div class="circle__timerstyle">
+                <span>:</span>
+            </div>
+            <div class="circle__timerstyle">
+                <span id="seconds"></span>
+            </div>
+
+            <div id="done"></div>
+        </div>
+        <button type="button" class="box--shadow" id="start" onclick="start()">Start</button>
+        <button type="button" class="box--shadow" id="pause" onclick="pause()">Pause</button>
+        <button type="button" class="box--shadow" id="reset" onClick="reset">Reset</button>
+        <div class="box">
+            <section>
+                <span>Pomodoro</span>
+                <div class="box__line">
+                    <span id="p_minutes">25</span>
+                    <span class="semicolon">:</span>
+                    <span id="p_seconds">00</span>
+                </div>
+                <button class="button" type="button" id="minusp" onClick="minusp">−</button>
+                <button id="plusp" class="button" type="button" onClick="plusp">+</button>
+            </section>
+            <section>
+                <span>Short Break</span>
+                <div class="box__line">
+                    <span id="s_minutes">05</span>
+                    <span class="semicolon">:</span>
+                    <span id="s_seconds">00</span>
+                </div>
+                <button id="minuss" class="button" type="button" onClick="minuss">−</button>
+                <button id="pluss" class="button" type="button" onClick="pluss">+</button>
+            </section>
+            <section>
+                <span>Long Break</span>
+                <div class="box__line">
+                    <span id="l_minutes">25</span>
+                    <span class="semicolon">:</span>
+                    <span id="l_seconds">00</span>
+                </div>
+                <button id="minusl" class="button" type="button" onClick="minusl">−</button>
+                <button id="plusl" class="button" type="button" onClick="plusl">+</button>
+            </section>
+        </div>
+    </main>
+    <script src="Pomodoro.js"></script>
+</body>
+
+</html>
